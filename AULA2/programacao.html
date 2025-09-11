@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECITEX</title>
+
+    <meta name="description" content="Free Web Tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Danielle Freitas">
+</head>
+<body>
+
+    <!-- cabeçalho -->
+    <header>
+        <h1>SECITEX - SEMANA DE CIÊNCIAS, TECNOLOGIA E EXTENSÃO</h1>
+        <!-- menu - principal, nesse caso -->
+        <nav>
+            <ol>
+                <li><a href="programacao.html">PROGRAMAÇÃO</a></li>
+                <li><a href="inscricao.html">INSCRIÇÃO</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <!-- recebe o conteúdo da página -->
+    <main>
+        <!-- CONTEÚDO ESPECÍFICO DA PÁGINA -->
+        <article>
+            <h2>PROGRAMAÇÃO</h2>
+            <table border="1">
+
+            <!--
+                CAPTION - título da tabela
+                tr - table row - linha da tabela
+                th - table head - célula de título
+                td - table data - célula de dados
+            -->
+            <!-- 
+                é necessário que todas as linhas tenham a mesma quantidade de células
+            -->
+
+                <tr>
+                    <th>Atividade</th>
+                    <th>Dia/Hora</th>
+                </tr>
+                <tr>
+                    <td>Palestra de Nicole</td>
+                    <td>12/09 às 11h</td>
+                </tr>
+                <tr>
+                    <td>Paletra de Winnicius</td>
+                    <td>12/09 às 14h</td>
+                </tr>
+                <tr>
+                    <td>Palestra de Juliana</td>
+                    <td>12/09 às 17h</td>
+                </tr>
+
+                <!-- CÉLULAS MESCLADAS -->
+
+                <tr>
+                    <!-- o valor 2 é a quantidade de células que a tabela vai preencher -->
+                     <!-- MESCLA COLUNA -->
+                    <td colspan="2">CÉLULAS MESCLADAS HORIZONTALMENTE</td>
+                </tr>
+                <tr>
+                    <!-- MESCLA LINHA -->
+                    <td rowspan="2">CÉLULAS MESCLADAS VERTICALMENTE</td>
+                    <td>Célula que sobrou</td>
+                </tr>
+                <tr>
+                    <td>Célula que sobrou</td>
+                </tr>
+            </table>
+        </article>
+        <aside>
+            <p>CONTEÚDO RELACIONADO - OPCIONAL</p>
+        </aside>
+    </main>
+
+    <footer>
+        <address>
+            Av. Senador Salgado Filho, 123
+        </address>
+        <!-- com protocolo, é ancora externa -->
+        <figure>
+            <a href="https://portal.ifrn.edu.br/"><img src="./imagens/ifrnlogo.png" alt="marca do IFRN"></a>
+        </figure>
+        <nav>
+            <ul>
+                <li><a href="#">TWITTER</a></li>
+                <li><a href="#">INSTAGRAM</a></li>
+            </ul>
+        </nav>
+        <p>Desenvolvido por Maria Júlia</p>
+    </footer>
+
+</body>
+</html>
