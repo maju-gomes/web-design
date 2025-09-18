@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-basis</title>
+
+    <style>
+
+        section{
+            border: 1px solid black;
+            border-radius: 1rem;
+            padding: 2rem;
+            display: flex;
+            gap: 1%;
+            /*permite que, quando a janela diminui, os blocos vao descendo*/
+            flex-wrap: wrap;
+        }
+        section > div{
+            background-color: rgb(235, 235, 235);
+            padding: 1%;
+            flex-basis: 30.66666666666666%;
+        }
+        section > h2{
+            background-color: rgb(168, 143, 143);
+            flex-basis: 100%; /*largura dos itens filhos do display-flex*/
+            padding: 1%
+        }
+        div.card-50{
+            flex-basis: 47.5%;
+        }
+    </style>
+
+</head>
+<body>
+    
+<section>
+
+     <h2>NOTÍCIA</h2>
+
+    <div class="card-50">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quaerat dicta dignissimos, incidunt quo veritatis molestias, corporis totam necessitatibus magni nulla voluptatibus nobis odit consequuntur deleniti eos id. Odit, ad!</p>
+    </div>
+    <div class="card-50">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quaerat dicta dignissimos, incidunt quo veritatis molestias, corporis totam necessitatibus magni nulla voluptatibus nobis odit consequuntur deleniti eos id. Odit, ad!</p>
+    </div>
+
+    <h2>NOTÍCIA</h2>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae earum eveniet, veritatis libero quibusdam vitae aliquam! Iusto in harum soluta facere sit voluptas obcaecati eius? Dolorum illo blanditiis architecto deserunt.</p>
+    </div>
+
+    <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quaerat dicta dignissimos, incidunt quo veritatis molestias, corporis totam necessitatibus magni nulla voluptatibus nobis odit consequuntur deleniti eos id. Odit, ad!</p>
+    </div>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis perferendis laborum, ex explicabo iste nisi architecto sint! Maiores ad, iure illo eius tenetur pariatur, consequatur iusto cum corporis at aliquid!</p>
+    </div>
+
+</section>
+
+</body>
+</html>

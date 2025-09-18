@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    height: 100vh;
+    /*alinhamento central horizontal*/
+    justify-content: center;
+    /*alinhamento central vertical - p usar, o body precisa ter 100% de altura*/
+    align-items: center;
+
+}
+section{
+    border: 1px solid black;
+    padding: 2rem;
+    border-radius: 2rem;
+    /*largura*/
+    width: 20rem;
+    /*altura - viewport height*/
+    height: 20rem;
+}
