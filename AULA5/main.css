@@ -1,0 +1,46 @@
+/* grid-area
+define a área de uma section*/
+
+main{
+    max-width: 70rem;
+    margin: 1rem auto;
+    display: grid;
+    /* define o espaçamento entre áreas, como no flex */
+    gap: 1rem;
+    /* cada fração representa uma coluna */
+    /*define a largura: divide a área por 4 e distribui de acordo com a fração*/
+    grid-template-columns: 1fr 2fr 1fr;
+    /* define a altura das linhas */
+    grid-template-rows: 10rem 10rem;
+    grid-template-areas:
+    /* definimos num tipo de matriz */
+    /* o ponto representa um espaço vazio e letras repetidas, mesclagem */
+    "c b d"
+    "a a .";
+
+}
+    
+    section{
+    background-color: antiquewhite;
+    border-radius: 2rem;
+    border: 1px solid black;
+    padding: 1rem;
+    overflow: auto; /*possibilita a barra de rolagem*/
+}
+
+section.noticias{
+    grid-area: a;
+}
+
+section.comemoracao{
+    grid-area: b;
+}
+
+section.organizadores{
+    grid-area: c;
+}
+
+/* a variável não pode ser só número, ou começar com número ou ter espaços/caracteres especiais */
+section.corrida{
+    grid-area: d;
+}

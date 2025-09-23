@@ -1,0 +1,29 @@
+main {
+    display: grid;
+    grid-template-areas:
+    "a b b c"
+    "a b b d"
+    "e e e e";
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+section {
+    background-color: aqua;
+}
+
+section.primeira{
+    grid-area: a;
+}
+section.segunda{
+    grid-area: b;
+}
+section.terceira{
+    grid-area: c;
+}
+section.quarta {
+    grid-area: d;
+}
+section.quinta{
+    grid-area: e;
+}
