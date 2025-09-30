@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li{
+    list-style-type: none;
+}
+
+ol > li{
+    display: inline;
+    /*  */
+    position: relative;
+}
+
+ol > li > a{
+    /* o âncora deve abranger todo o campo, para que haja melhor usabilidade */
+    display: inline-block;
+    padding: 1rem;
+    color: darkcyan;
+    background-color: gainsboro;
+    text-decoration: none;
+}
+
+li > ul{
+    position: absolute;
+    padding: 1rem;
+    background-color: gainsboro;
+    /* atributo que esconde o submenu */
+    visibility: hidden;
+}
+
+/* ao passar o mouse sobre o li, que está dentro do ol, o ul é formatado */
+ol > li:hover ul{
+    visibility: visible;
+}
